@@ -1,0 +1,476 @@
+/* ═══════════════════════════════════════
+   SUGRAN KITCHEN — PAGES CSS
+   About · Gallery · Testimonials
+═══════════════════════════════════════ */
+
+/* ── ABOUT PAGE ── */
+.about-story-sec {
+  background: var(--cream2);
+  padding: 72px 32px;
+}
+.about-story-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 64px;
+  align-items: center;
+}
+.about-img-stack {
+  position: relative;
+}
+.about-img-main {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(123,28,28,.18);
+  border: 3px solid var(--gold);
+}
+.about-img-main img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  display: block;
+}
+.about-img-small {
+  position: absolute;
+  bottom: -24px;
+  right: -24px;
+  width: 160px;
+  height: 160px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 3px solid var(--gold);
+  box-shadow: 0 8px 24px rgba(123,28,28,.2);
+}
+.about-img-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-shud-badge {
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  background: var(--maroon);
+  border: 2px solid var(--gold);
+  color: var(--lgold);
+  font-family: 'Tiro Devanagari Marathi', serif;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 12px 14px;
+  border-radius: 12px;
+  line-height: 1.6;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(74,14,14,.3);
+}
+.badge-heart { display: block; font-size: 16px; margin-top: 4px; }
+
+.about-para {
+  font-size: 14.5px;
+  color: var(--mid);
+  line-height: 1.85;
+  margin-bottom: 14px;
+}
+.about-para strong { color: var(--maroon); }
+
+.about-values-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 28px;
+}
+.about-val {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: var(--cream);
+  border: 1px solid rgba(200,146,42,.2);
+  border-radius: 12px;
+  padding: 14px 8px;
+  text-align: center;
+  transition: .2s;
+}
+.about-val:hover { border-color: var(--gold); transform: translateY(-2px); }
+.av-icon { font-size: 24px; }
+.av-label { font-size: 11.5px; color: var(--mid); font-weight: 600; line-height: 1.4; }
+
+/* STATS STRIP */
+.stats-strip {
+  background: var(--maroon);
+  padding: 40px 32px;
+  position: relative;
+  overflow: hidden;
+}
+.stats-strip::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='20' cy='20' r='1' fill='%23C8922A' opacity='.15'/%3E%3C/svg%3E");
+}
+.stats-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.stat-item { text-align: center; }
+.stat-num {
+  font-family: 'Rozha One', serif;
+  font-size: 48px;
+  color: var(--lgold);
+  line-height: 1;
+}
+.stat-label {
+  font-size: 13px;
+  color: rgba(240,201,106,.7);
+  margin-top: 4px;
+  font-weight: 500;
+}
+.stat-div {
+  width: 1px;
+  height: 60px;
+  background: rgba(200,146,42,.3);
+}
+
+/* WHY US */
+.why-sec {
+  background: var(--cream);
+  padding: 72px 32px;
+}
+.why-inner { max-width: 1100px; margin: 0 auto; }
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.why-card {
+  background: #fff;
+  border: 1px solid rgba(200,146,42,.15);
+  border-radius: 16px;
+  padding: 28px 24px;
+  transition: all .25s;
+}
+.why-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold);
+  box-shadow: 0 10px 28px rgba(123,28,28,.1);
+}
+.why-icon { font-size: 36px; margin-bottom: 14px; display: block; }
+.why-card h3 {
+  font-family: 'Tiro Devanagari Marathi', serif;
+  font-size: 17px;
+  color: var(--maroon);
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.why-card p { font-size: 13.5px; color: var(--mid); line-height: 1.7; }
+
+/* CTA BANNER */
+.cta-banner {
+  background: linear-gradient(135deg, var(--deep), var(--maroon));
+  padding: 64px 32px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.cta-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='30' cy='30' r='1.5' fill='%23C8922A' opacity='.08'/%3E%3C/svg%3E");
+}
+.cta-banner-inner { max-width: 600px; margin: 0 auto; position: relative; z-index: 1; }
+.cta-banner h2 {
+  font-family: 'Rozha One', serif;
+  font-size: 36px;
+  color: var(--lgold);
+  margin-bottom: 12px;
+}
+.cta-banner p { color: rgba(253,246,227,.7); font-size: 15px; margin-bottom: 28px; }
+.cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+/* ── GALLERY PAGE ── */
+.gallery-sec {
+  background: var(--cream2);
+  padding: 64px 32px 80px;
+}
+.gallery-inner { max-width: 1100px; margin: 0 auto; }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 240px;
+  gap: 16px;
+}
+.gallery-item-large {
+  grid-column: span 2;
+}
+.gallery-item {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid rgba(200,146,42,.15);
+  transition: all .25s;
+}
+.gallery-item:hover {
+  border-color: var(--gold);
+  box-shadow: 0 10px 30px rgba(123,28,28,.18);
+  transform: scale(1.015);
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s;
+  display: block;
+}
+.gallery-item:hover img { transform: scale(1.07); }
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(74,14,14,.82) 0%, transparent 55%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 16px;
+  opacity: 0;
+  transition: opacity .25s;
+}
+.gallery-item:hover .gallery-overlay { opacity: 1; }
+.gallery-info { color: #fff; }
+.gi-name {
+  display: block;
+  font-family: 'Tiro Devanagari Marathi', serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--lgold);
+}
+.gi-price { font-size: 12.5px; color: rgba(255,255,255,.75); margin-top: 2px; display: block; }
+.gi-zoom { font-size: 22px; }
+
+/* LIGHTBOX */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(20,8,8,.9);
+  z-index: 500;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeIn .2s ease;
+}
+.lightbox.open { display: flex; }
+.lightbox-inner {
+  background: #fff;
+  border-radius: 20px;
+  max-width: 680px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(0,0,0,.5);
+  position: relative;
+}
+.lightbox-inner img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  display: block;
+}
+.lb-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(74,14,14,.8);
+  border: none;
+  color: var(--lgold);
+  font-size: 18px;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.lb-info {
+  padding: 20px 24px 24px;
+  text-align: center;
+}
+.lb-name {
+  font-family: 'Tiro Devanagari Marathi', serif;
+  font-size: 22px;
+  color: var(--maroon);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.lb-desc { font-size: 13.5px; color: var(--mid); }
+
+/* ── TESTIMONIALS PAGE ── */
+.rating-summary {
+  background: var(--cream);
+  border-bottom: 2px solid rgba(200,146,42,.2);
+  padding: 40px 32px;
+}
+.rating-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 48px;
+  align-items: center;
+}
+.rating-big { text-align: center; }
+.rating-num {
+  font-family: 'Rozha One', serif;
+  font-size: 64px;
+  color: var(--maroon);
+  line-height: 1;
+}
+.rating-stars { font-size: 22px; color: var(--gold); margin: 4px 0; }
+.rating-label { font-size: 12px; color: var(--muted); font-weight: 600; }
+.rating-bars { display: flex; flex-direction: column; gap: 8px; }
+.rbar-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12.5px;
+  color: var(--mid);
+}
+.rbar-row span:first-child { min-width: 30px; }
+.rbar-row span:last-child { min-width: 32px; }
+.rbar {
+  flex: 1;
+  height: 8px;
+  background: rgba(200,146,42,.15);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.rbar-fill {
+  height: 100%;
+  background: var(--gold);
+  border-radius: 4px;
+}
+.rating-count { text-align: center; }
+.rc-num {
+  font-family: 'Rozha One', serif;
+  font-size: 48px;
+  color: var(--maroon);
+  line-height: 1;
+}
+.rc-label { font-size: 13px; color: var(--muted); margin-top: 6px; line-height: 1.5; }
+
+.testi-sec {
+  background: var(--cream2);
+  padding: 64px 32px 80px;
+}
+.testi-inner { max-width: 1100px; margin: 0 auto; }
+.testi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.testi-card {
+  background: #fff;
+  border: 1px solid rgba(200,146,42,.15);
+  border-radius: 18px;
+  padding: 26px 24px 20px;
+  position: relative;
+  transition: all .25s;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.testi-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(123,28,28,.1);
+  border-color: rgba(200,146,42,.3);
+}
+.testi-card-featured {
+  border: 2px solid var(--gold);
+  background: linear-gradient(135deg, #fffdf5, #fff8e6);
+}
+.testi-quote {
+  font-family: Georgia, serif;
+  font-size: 48px;
+  color: var(--gold);
+  opacity: .5;
+  line-height: .8;
+  margin-bottom: -8px;
+}
+.testi-text {
+  font-size: 13.5px;
+  color: var(--mid);
+  line-height: 1.75;
+  flex: 1;
+  font-style: italic;
+}
+.testi-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid rgba(200,146,42,.15);
+  padding-top: 14px;
+}
+.testi-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--maroon);
+  color: var(--lgold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  flex-shrink: 0;
+  font-family: 'Tiro Devanagari Marathi', serif;
+}
+.testi-name { font-weight: 700; font-size: 13.5px; color: var(--deep); }
+.testi-loc { font-size: 11.5px; color: var(--muted); }
+.testi-stars { margin-left: auto; font-size: 13px; color: var(--gold); }
+.testi-dish {
+  font-size: 12px;
+  background: rgba(200,146,42,.1);
+  color: var(--maroon);
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  width: fit-content;
+  border: 1px solid rgba(200,146,42,.2);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .about-story-inner { grid-template-columns: 1fr; gap: 48px; }
+  .about-img-small { width: 120px; height: 120px; right: -12px; bottom: -12px; }
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .testi-grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery-item-large { grid-column: span 1; }
+  .rating-inner { grid-template-columns: 1fr; text-align: center; gap: 24px; }
+  .stat-div { display: none; }
+}
+
+@media (max-width: 680px) {
+  .why-grid, .testi-grid { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 180px; }
+  .gallery-item-large { grid-column: span 2; }
+  .about-values-row { grid-template-columns: repeat(2, 1fr); }
+  .stats-inner { flex-direction: column; gap: 24px; }
+  .cta-banner h2 { font-size: 28px; }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid { grid-template-columns: 1fr; grid-auto-rows: 200px; }
+  .gallery-item-large { grid-column: span 1; }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact – Sugran Kitchen</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Poppins:wght@300;400;500;600;700&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap" rel="stylesheet">
+<style>
+.contact-sec{max-width:900px;margin:0 auto;padding:64px 32px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:40px}
+.ccard{background:#fff;border:1px solid rgba(200,146,42,.2);border-radius:16px;padding:28px;text-align:center;transition:.2s}
+.ccard:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:0 8px 24px rgba(123,28,28,.1)}
+.ccard-icon{font-size:36px;margin-bottom:12px}
+.ccard-label{font-size:11px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.ccard-val{font-size:16px;font-weight:700;color:var(--deep)}
+.ccard-val a{color:var(--deep);text-decoration:none}.ccard-val a:hover{color:var(--maroon)}
+.contact-map{margin-top:40px;border-radius:16px;overflow:hidden;border:1px solid rgba(200,146,42,.2);background:#f0e8d5;height:300px;display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--muted)}
+@media(max-width:600px){.contact-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="topbar"><span>📞 8530888212</span><span class="sep">|</span><span>📍 Arvi, Maharashtra</span></div>
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon"><svg width="44" height="44" viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="21" fill="#7B1C1C" stroke="#C8922A" stroke-width="1.5"/><ellipse cx="22" cy="28" rx="10" ry="7" fill="#C8922A"/><ellipse cx="22" cy="28" rx="7.5" ry="5" fill="#E8A830"/><rect x="17" y="20" width="10" height="5" rx="2.5" fill="#B07820"/><ellipse cx="22" cy="20" rx="7" ry="2.5" fill="#C8922A"/><path d="M22 14 Q21 11 22 8" stroke="#F0C96A" stroke-width="1.2" stroke-linecap="round" fill="none"/></svg></div>
+      <div class="logo-text"><span class="logo-brand">Sugran Kitchen</span><span class="logo-tag">— आईच्या हातची चव —</span></div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li>
+      <li><a href="menu.html">Menu</a></li><li><a href="gallery.html">Gallery</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li><li><a href="contact.html" class="active">Contact Us</a></li>
+    </ul>
+    <a href="menu.html" class="nav-order-btn">ORDER NOW 🛒</a>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="orn-strip"></div>
+<div class="page-hero"><h1>Contact Us</h1><p>संपर्क करा — आम्ही मदतीसाठी सदैव तयार आहोत!</p></div>
+<div class="orn-strip"></div>
+<section class="contact-sec">
+  <div class="slbl" style="text-align:center">Get in Touch</div>
+  <div class="stitle" style="text-align:center">संपर्क <em>करा</em></div>
+  <div class="tbar" style="margin:12px auto 0"></div>
+  <div class="contact-grid">
+    <div class="ccard"><div class="ccard-icon">📞</div><div class="ccard-label">Phone / WhatsApp</div><div class="ccard-val"><a href="tel:+918530888212">8530888212</a></div></div>
+    <div class="ccard"><div class="ccard-icon">✉️</div><div class="ccard-label">Email</div><div class="ccard-val"><a href="mailto:swatimuley455@gmail.com">swatimuley455@gmail.com</a></div></div>
+    <div class="ccard"><div class="ccard-icon">📍</div><div class="ccard-label">Location</div><div class="ccard-val">Arvi, Wardha District,<br>Maharashtra</div></div>
+    <div class="ccard"><div class="ccard-icon">💬</div><div class="ccard-label">WhatsApp Order</div><div class="ccard-val"><a href="https://wa.me/918530888212" target="_blank" style="color:#128C7E">Chat & Order Now</a></div></div>
+  </div>
+  <div class="contact-map">📍 Arvi, Wardha District, Maharashtra</div>
+</section>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-item"><span>📞</span><a href="tel:+918530888212">8530888212</a></div>
+    <div class="footer-sep">|</div>
+    <div class="footer-item"><span>📍</span><span>Arvi, Maharashtra</span></div>
+    <div class="footer-sep">|</div>
+    <div class="footer-item"><span>❤️</span><span>धन्यवाद! पुन्हा भेट द्या!</span></div>
+  </div>
+  <div class="footer-copy">© 2025 Sugran Kitchen · Arvi, Maharashtra · Made with ❤️</div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
